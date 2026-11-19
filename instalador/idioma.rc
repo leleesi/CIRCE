@@ -1,0 +1,20 @@
+#pragma code_page(65001)
+#include <windows.h>
+#include "idioma_ids.h"
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+
+CIRCE_LANGUAGE_ART BITMAP "../assets/installer-language.bmp"
+
+CIRCE_LANGUAGE_DIALOG DIALOGEX 0, 0, 234, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CIRCE · Idioma / Language"
+FONT 9, "Segoe UI"
+BEGIN
+    CONTROL CIRCE_LANGUAGE_ART, 110, "Static", SS_BITMAP | SS_REALSIZECONTROL, 10, 11, 48, 43
+    LTEXT "Escolhe o idioma do CIRCE.", -1, 70, 13, 154, 12
+    LTEXT "Choose your CIRCE language.", -1, 70, 27, 154, 12
+    PUSHBUTTON "&Português", CIRCE_PORTUGUESE, 70, 45, 70, 17, WS_TABSTOP
+    PUSHBUTTON "&English", CIRCE_ENGLISH, 148, 45, 70, 17, WS_TABSTOP
+    PUSHBUTTON "Cancelar / Cancel", IDCANCEL, 145, 75, 73, 16, WS_TABSTOP
+END
