@@ -1,0 +1,30 @@
+name: Bug report / Reportar erro
+description: Report a reproducible problem in CIRCE.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: CIRCE version / Versão do CIRCE
+      placeholder: "0.0.1"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows, GPU and game / Windows, GPU e jogo
+      description: Include the display mode if the issue affects the overlay or capture.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Passos para reproduzir
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result / Resultado esperado e obtido
+    validations:
+      required: true
