@@ -1,0 +1,13 @@
+* -text
+*.md text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.cmd text eol=crlf
+*.exe binary
+*.dll binary
+*.png binary
+*.bmp binary
+*.ico binary
+*.pdf binary
+vendor/** -text
+tests/data/** -text
